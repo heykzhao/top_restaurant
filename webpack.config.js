@@ -1,4 +1,5 @@
 const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -9,6 +10,18 @@ module.exports = {
     devServer: {
         static: './dist',
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+          title: 'Just Simple Cafe',
+          templateContent: `
+            <html>
+            <body>
+                <div id="content"></div>
+            </body>
+            </html>
+        `
+        }),
+    ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname,'dist'),
