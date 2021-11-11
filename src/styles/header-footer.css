@@ -3,9 +3,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky; 
     top: 0;
-    width: 100%;
     padding-top: 37px;
     padding-bottom: 37px;
     background-color: rgb(255, 217, 0);
@@ -40,19 +39,45 @@
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
+.footer-container {
+    position: sticky;
+    bottom: 0px;
+}
+.nameplate {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 224, 252);
+    /* border-style: solid; */
+    /* border-color: black; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.copyright {
+    display: inline-block;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.github-logo {
+    display: inline-block;
+    margin-left: 10px;
+    height: 25px;
+}
 
 @media only screen and (max-width: 850px) {
     .header-container {
         flex-direction: column;
-        padding-top: 14.5px;
-        padding-bottom: 14.5px;
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
     .header-logo {
         padding-left: 0px;
-        font-size: 22.5px;
+        font-size: 25px;
     }
     .header-logo-capitalize {
-        font-size: 35px;
+        font-size: 40px;
     }
     .header-links {
         padding-top: 20px;

@@ -1,0 +1,13 @@
+.body-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.home-background-image {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
