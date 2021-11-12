@@ -6,8 +6,9 @@
     overflow: hidden;
 }
 .home-background-image {
+    display: flex;
+    flex: 1;
+    width: 100%;
     background-size: cover;
     background-position: center;
-    height: 87.3vh;
-    width: 100vw;
 }
