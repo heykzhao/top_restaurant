@@ -3,27 +3,23 @@ function clearBodyContainer() {
     bodyContainer.innerHTML = '';
 }
 
-function createMenuItemDrink(title, description, price) {
+function createMenuItemDrink(title, price) {
     const newMenuItem = document.createElement('div');
     const menuDrinks = document.querySelector('.menu-items-drinks');
     newMenuItem.setAttribute('class', 'menu-item');
     newMenuItem.innerHTML = `
-    <div class="menu-title">${title}</div>
-    <div class="menu-description">${description}</div>
-    <div class="menu-price">${price}</div>
+    <div class="menu-item">${title} - ${price}</div>
     `;
     menuDrinks.appendChild(newMenuItem);
 }
 
-function createMenuItemSnack(title, description, price) {
+function createMenuItemSnack(title, price) {
     const newMenuItem = document.createElement('div');
     const menuSnacks = document.querySelector('.menu-items-snacks');
     newMenuItem.setAttribute('class', 'menu-item');
     newMenuItem.innerHTML = `
-    <div class="menu-title">${title}</div>
-    <div class="menu-description">${description}</div>
-    <div class="menu-price">${price}</div>
-    `
+    <div class="menu-item">${title} - ${price}</div>
+    `;
     menuSnacks.appendChild(newMenuItem);
 }
 
@@ -42,13 +38,13 @@ function loadMenuPage() {
     menuSnacks.setAttribute('class', 'menu-snacks');
 
     menuDrinks.innerHTML = `
-    <div class='menu-section-title-drinks'>
+    <div class='menu-section-title'>
         ━━━━━  DRINKS  ━━━━━
     </div>
     <div class='menu-items-drinks'></div>
     `
     menuSnacks.innerHTML = `
-    <div class='menu-section-title-snacks'>
+    <div class='menu-section-title'>
         ━━━━━  SNACKS  ━━━━━
     </div>
     <div class='menu-items-snacks'></div>
@@ -59,13 +55,24 @@ function loadMenuPage() {
     menuWrapper.appendChild(menuDrinks);
     menuWrapper.appendChild(menuSnacks);
 
-    createMenuItemDrink('test', 'test', 'test');
-    createMenuItemDrink('test', 'test', 'test');
-    createMenuItemDrink('test', 'test', 'test');
-    createMenuItemSnack('test', 'test', 'test');
-    createMenuItemSnack('test', 'test', 'test');
-    createMenuItemSnack('test', 'test', 'test');
-    createMenuItemSnack('test', 'test', 'test');
+    createMenuItemDrink('Pour Over', '$6');
+    createMenuItemDrink('Cold Brew', '$5');
+    createMenuItemDrink('Espresso', '$2.5');
+    createMenuItemDrink('Americano', '$4');
+    createMenuItemDrink('Cappucino', '$5');
+    createMenuItemDrink('Latte', '$4');
+    createMenuItemDrink('Matcha Latte', '$6');
+    createMenuItemDrink('Chai Latte', '$6');
+    createMenuItemDrink('Breakfast Tea', '$4');
+    createMenuItemDrink('Green Tea', '$4');
+    createMenuItemDrink('Hot Chocolate', '$4');
+    createMenuItemDrink('Sparkling Water', '$4');
+    createMenuItemSnack('Yogurt Parfait', '$6');
+    createMenuItemSnack('Coffee Cake Muffin', '$5');
+    createMenuItemSnack('Chocolate Muffin', '$5');
+    createMenuItemSnack('Bagel w/ Cream Cheese', '$5');
+    createMenuItemSnack('Cookie', '$3');
+    createMenuItemSnack('Mints', '$5');
 };
 
 export default loadMenuPage;
