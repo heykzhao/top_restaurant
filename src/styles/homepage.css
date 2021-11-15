@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
 }
 .home-background-image {
     display: flex;
+    overflow: hidden;
     flex: 1;
     width: 100%;
     background-size: cover;

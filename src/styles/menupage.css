@@ -1,0 +1,78 @@
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 225);
+}
+.menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-style: solid;
+    border-color: rgb(119, 0, 255);
+    border-width: 2px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.menu-section-title {
+    width: 100%;
+}
+.menu-drinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.menu-snacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.menu-items-drinks {
+    display: flex;
+    flex-direction: row;
+}
+.menu-items-snacks {
+    display: flex;
+    flex-direction: row;
+}
+.menu-item {
+
+}
+.menu-title {
+
+}
+.menu-description{
+
+}
+.menu-price {
+
+}
+
+
+@media only screen and (max-width: 850px) {
+    .menu-drinks{
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+    .menu-snacks{
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+}
