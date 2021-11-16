@@ -27,7 +27,7 @@ function createMenuItemSnack(title, price) {
 
 function loadMenuPage() {
     clearBodyContainer();
-
+    
     const bodyContainer = document.querySelector('.body-container');
     const menu = document.createElement('div');
     const menuWrapper = document.createElement('div');

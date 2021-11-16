@@ -21,10 +21,10 @@
     align-items: center;
     width: 70%;
     border-style: solid;
-    border-color: rgb(255, 219, 224);
+    border-color: rgb(255, 245, 191);
     border-width: 2px;
     border-radius: 20px;
-    background-color:  rgb(255, 219, 224);
+    background-color:  rgb(255, 245, 191);
     padding: 20px;
 }
 .home-header {
