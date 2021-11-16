@@ -1,11 +1,11 @@
 .menu-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex: 1;
     height: 100%;
     width: 100%;
-    padding-top: 20px;
+    padding: 20px 0px;
     background-size: cover;
     background-position: center;
 }

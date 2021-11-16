@@ -6,9 +6,89 @@
 }
 .home-background-image {
     display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     flex: 1;
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+.home-focus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border-style: solid;
+    border-color: rgb(255, 219, 224);
+    border-width: 2px;
+    border-radius: 20px;
+    background-color:  rgb(255, 219, 224);
+    padding: 20px;
+}
+.home-header {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    padding: 10px 0px;
+    text-align: center;
+}
+.home-subheader {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.home-subtext {
+    padding: 30px 0px;
+    text-align: center;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.menu-CTA {
+    cursor: pointer;
+    background-color: rgb(236, 78, 78);
+    border: 2px solid rgb(236,78,78);
+    color: white;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+.menu-CTA:hover {
+    transition: all .1s ease-in-out;
+    background-color: rgb(245, 133, 133);
+    border: 2px solid rgb(245, 133, 133);
+}
+
+@media only screen and (max-width: 850px) {
+    .home-header {
+        padding: 7.5px 0px;
+        font-size: 60px;
+    }
+    .home-subheader {
+        font-size: 40px;
+    }
+    .home-subtext {
+        font-size: 18px;
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .home-header {
+        padding: 5px 0px;
+        font-size: 40px;
+    }
+    .home-subheader {
+        font-size: 30px;
+    }
+    .home-subtext {
+        font-size: 12px;
+        padding: 15px 0px;
+    }
+    .menu-CTA {
+        font-size: 15px;
+    }
 }
