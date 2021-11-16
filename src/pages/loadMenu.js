@@ -1,3 +1,5 @@
+import Background from '../assets/images/pexels_coffee-shop.jpg';
+
 function clearBodyContainer() {
     const bodyContainer = document.querySelector('.body-container');
     bodyContainer.innerHTML = '';
@@ -33,19 +35,20 @@ function loadMenuPage() {
     const menuSnacks = document.createElement('div');
 
     menu.setAttribute('class','menu-container');
+    menu.style.backgroundImage = `url(${Background})`;
     menuWrapper.setAttribute('class','menu-wrapper');
     menuDrinks.setAttribute('class', 'menu-drinks');
     menuSnacks.setAttribute('class', 'menu-snacks');
 
     menuDrinks.innerHTML = `
     <div class='menu-section-title'>
-        ━━━━━  DRINKS  ━━━━━
+        ━━  DRINKS  ━━
     </div>
     <div class='menu-items-drinks'></div>
     `
     menuSnacks.innerHTML = `
     <div class='menu-section-title'>
-        ━━━━━  SNACKS  ━━━━━
+        ━━  SNACKS  ━━
     </div>
     <div class='menu-items-snacks'></div>
     `

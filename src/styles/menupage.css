@@ -6,6 +6,8 @@
     height: 100%;
     width: 100%;
     padding-top: 20px;
+    background-size: cover;
+    background-position: center;
 }
 .menu-wrapper {
     display: flex;
@@ -14,10 +16,10 @@
     align-items: center;
     width: 70%;
     border-style: solid;
-    border-color: rgb(253, 234, 237);
+    border-color: rgb(255, 219, 224);
     border-width: 2px;
     border-radius: 20px;
-    background-color: rgb(253, 234, 237);
+    background-color:  rgb(255, 219, 224);
     padding: 20px;
 }
 .menu-section-title {

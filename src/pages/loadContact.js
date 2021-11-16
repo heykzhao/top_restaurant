@@ -1,3 +1,4 @@
+import Background from '../assets/images/pexels_coffee-shop.jpg';
 
 function clearBodyContainer() {
     const bodyContainer = document.querySelector('.body-container');
@@ -13,6 +14,7 @@ function loadContactPage() {
     const feedbackContainer = document.createElement('div');
 
     contactContainer.setAttribute('class', 'contact-container');
+    contactContainer.style.backgroundImage = `url(${Background})`;
     informationContainer.setAttribute('class', 'information-container');
     feedbackContainer.setAttribute('class', 'feedback-container');
 
