@@ -1,4 +1,5 @@
 import Background from '../assets/images/pexels_coffee-shop.jpg';
+import loadMenuPage from './loadMenu';
 
 
 function clearBodyContainer() {
@@ -26,6 +27,8 @@ function loadHomePage() {
     bodyContainer.appendChild(homeContainer);
     homeContainer.appendChild(homeFocus);
 
+    const button = document.querySelector('.menu-CTA');
+    button.addEventListener('click',loadMenuPage);
 };
 
 export default loadHomePage;
